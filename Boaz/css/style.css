@@ -33,13 +33,23 @@ body {
     font-family: MyriadProRegular;
 }
 
+h1,
+h3 {
+    font-family: MyriadProBlack;
+}
+
+h2,
+h4 {
+    font-family: MyriadProRegular;
+}
+
 p {
     font-family: MyriadProLight;
 }
 
 :root {
     --color-black-100: hsl(213, 20%, 9%);
-    --bg-image-one: url(../img/paralax-box/layer-33.png);
+    --bg-image-three: url(../img/paralax-box/layer-33.png);
     --bg-image-two: url(../img/paralax-box/layer-32.png);
 }
 
@@ -69,8 +79,11 @@ p {
     color: #fff;
     font-size: 5.2vh;
     font-weight: 600;
-    padding: 0.1em 0.3em 0.1em 0.3em;
+    padding: 0.3em 0.5em 0.1em 0.5em;
     letter-spacing: 2px;
+    position: relative;
+    z-index: 100;
+    font-family: MyriadProBlack;
 }
 
 .one-page-link--color-c {
@@ -79,7 +92,8 @@ p {
 
 .page-next-flex-box {
     justify-content: space-between;
-    padding: 10em 1em 10em 2.5em;
+    padding: 10em 1.5em 10em 3em;
+    z-index: 100;
 }
 
 .page-next-flex-box--img-url {
@@ -146,6 +160,7 @@ p {
 
 .page-flex-box__div__page-box {
     bottom: 6%;
+    z-index: 100;
 }
 
 .page-flex-box__div__page-next-box {
@@ -170,14 +185,44 @@ p {
     height: 60vh;
 }
 
+.page-flex-box--two-img-url,
+.page-flex-box--three-img-url {
+    background-size: cover;
+    height: 28vh;
+}
+
 .page-flex-box--two-img-url {
-    /* Comma separated values for each image */
-    background-image: var(--bg-image-one), var(--bg-image-two);
-    background-size: 100%, 100%, cover;
-    background-repeat: no-repeat;
-    background-position: 54% 75%, 50% top, bottom;
-    height: 80vh;
-    width: 100%;
+    background-image: var(--bg-image-two);
+}
+
+.page-flex-box--three-img-url {
+    background-image: var(--bg-image-three);
+    margin-top: -1px;
+}
+
+.page-flex-box__div__p--format {
+    bottom: 0;
+}
+
+.page-flex-box__div__h2--format {
+    bottom: -5%;
+}
+
+.page-flex-box__div__p--format,
+.page-flex-box__div__p--two-format {
+    color: #fff;
+}
+
+.page-flex-box__div__p--format {
+    margin: 0;
+}
+
+.page-flex-box__div__next-link-box--format {
+    bottom: 15%;
+}
+
+.page-flex-box__div__p--two-format {
+    margin: 1em 0 0 0;
 }
 
 .page-next-two-flex-box {
@@ -208,7 +253,7 @@ p {
     margin: 0;
     padding: 1em 0;
     color: #fff;
-    font-size: 3.7vh;
+    font-size: 4.2vh;
 }
 
 .menu-link,
@@ -220,12 +265,16 @@ p {
     background-color: rgba(255, 255, 255, 0.7);
     margin: 0 11rem;
     padding: 3em;
-    height: 60vh;
+    height: 100%;
 }
 
 .page-next-flex-box--color-c {
     background-color: rgba(0, 0, 0, .7);
     color: #fff;
+}
+
+.parallax-next-item__page-box {
+    bottom: -4%;
 }
 
 
@@ -290,12 +339,13 @@ p {
 }
 
 .menu-link {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     line-height: inherit;
     text-transform: uppercase;
     color: #fff;
     transition: all 0.35s ease-in-out;
     padding: 0 0.5em;
+    font-family: MyriadProRegular;
 }
 
 .menu-link:hover {
@@ -389,8 +439,10 @@ p {
 }
 
 .parallax-item__one-img-box__img {
-    bottom: 0;
+    bottom: 5%;
     width: 100%;
+    height: 80%;
+    object-fit: contain;
 }
 
 .facebook-link-box {
@@ -431,6 +483,12 @@ p {
 .som-box__p {
     font-size: 4vh;
     margin: 0.5em 0 0 0;
+    letter-spacing: 2px;
+}
+
+.som-box__link {
+    font-family: MyriadProRegular;
+    color: #000;
 }
 
 
@@ -475,20 +533,22 @@ textarea {
 }
 
 .form__submit-box {
-    width: 23%;
+    width: 25%;
     margin: auto;
 }
 
 .form__submit-box__btn {
     background: #000;
     color: #fff;
-    padding: 0.33em 0;
+    padding: 0.6em 0 0.5em 0;
     cursor: pointer;
+    font-family: MyriadProBlack;
 }
 
 .footer__one-img {
     top: -13%;
-    width: 90%;
+    width: 100%;
+    left: 0;
 }
 
 
@@ -547,4 +607,185 @@ textarea {
 
 /********************  menu end **********************/
 
-@media screen and (max-width: 767px) {}
+@media (min-width: 1800px) and (max-width: 2000px) {}
+
+@media (min-width: 1600px) and (max-width: 1800px) {}
+
+@media (min-width: 1500px) and (max-width: 1600px) {}
+
+@media (min-width: 1400px) and (max-width: 1500px) {}
+
+@media (min-width: 1200px) and (max-width: 1400px) {}
+
+@media (min-width: 991px) and (max-width: 1200px) {
+    .above-the-menu-box__two-img-box {
+        right: 0;
+        top: 2em;
+    }
+    .menu-link {
+        font-size: 1.4rem;
+    }
+    .parallax-item__one-img-box,
+    .page-next-two-flex-box,
+    .page-next-flex-box--color-and-w-value {
+        margin: 0 6rem;
+    }
+    .page-flex-box-text-box {
+        bottom: 10.5%;
+    }
+    .som-box__p {
+        font-size: 3vh;
+    }
+    .footer__one-img {
+        top: -10%;
+    }
+    footer {
+        padding: 0 6rem;
+    }
+    .footer__form {
+        padding-top: 7rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .above-the-menu-box__one-img-box__img,
+    .above-the-menu-box__two-img-box__img {
+        width: 70%;
+    }
+    .above-the-menu-box__two-img-box {
+        top: 2em;
+    }
+    .menu-link {
+        font-size: 1.3rem;
+    }
+    .facebook-link-box__img {
+        width: 7%;
+    }
+    .parallax-item__one-img-box,
+    .page-next-two-flex-box,
+    .page-next-flex-box--color-and-w-value {
+        margin: 0 2rem;
+    }
+    .page-flex-box-text-box {
+        bottom: 7.5%;
+    }
+    .page-next-two-flex-box {
+        flex-wrap: unset;
+    }
+    .som-box__p {
+        font-size: 3vh;
+    }
+    footer {
+        padding: 0 2rem;
+    }
+    .footer__form {
+        padding-top: 5rem;
+    }
+    .footer__one-img {
+        top: -10%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .above-the-menu-box__one-img-box {
+        bottom: unset;
+        left: 5%;
+        top: 2em;
+    }
+    .above-the-menu-box__two-img-box {
+        right: 0;
+        top: 2em;
+    }
+    .above-the-menu-box__two-img-box__img {
+        width: 70%;
+    }
+    .parallax-item__one-img-box,
+    .page-next-two-flex-box,
+    .page-next-flex-box--color-and-w-value {
+        margin: 2rem;
+    }
+    .page-flex-box,
+    .page-next-flex-box,
+    .page-next-two-flex-box,
+    .form-group-flex-box {
+        flex-wrap: unset;
+        flex-direction: column;
+    }
+    .page-flex-box__div {
+        width: 100%;
+    }
+    .splide__slide__img {
+        height: 100%;
+    }
+    .parallax-one-item {
+        margin-bottom: 8em;
+        height: 200vh;
+        background-size: contain;
+        background-repeat: round;
+    }
+    .page-next-flex-box {
+        padding: 3rem 0 0 0;
+    }
+    .page-next-flex-box__img-box__img {
+        width: 80px;
+        height: 80px;
+        display: block;
+        margin: auto;
+        margin-bottom: 3em;
+    }
+    .page-flex-box--two-img-url,
+    .page-flex-box--three-img-url {
+        height: 46vh;
+    }
+    .page-flex-box__div__p {
+        width: 100%;
+        margin-top: 0;
+        padding: 0;
+    }
+    .page-flex-box__div__h2--format {
+        bottom: unset;
+    }
+    .page-flex-box__div__p--format {
+        bottom: unset;
+    }
+    .page-next-two-flex-box__div {
+        margin: 0 0.3rem;
+        width: 100%;
+        margin-bottom: 2.5rem;
+    }
+    .page-next-two-flex-box__div__img-box__img {
+        width: 70%;
+    }
+    .som-box__p {
+        font-size: 3vh;
+        margin: -1.5em 0 0 0;
+    }
+    .parallax-item {
+        min-height: unset;
+    }
+    .parallax-next-item__page-box {
+        position: relative;
+        bottom: 0;
+    }
+    .page-flex-box__div__next-link-box {
+        margin: 1.7rem 0 2.5rem 0;
+    }
+    .footer__one-img {
+        top: -12%;
+        height: 20vh;
+    }
+    footer {
+        padding: 0 2rem;
+    }
+    .footer__form {
+        padding-top: 5rem;
+    }
+}
+
+@media (min-width: 640px) and (max-width: 768px) {}
+
+@media (min-width: 500px) and (max-width: 640px) {}
+
+@media (min-width: 400px) and (max-width: 500px) {}
+
+@media (min-width: 300px) and (max-width: 400px) {}
