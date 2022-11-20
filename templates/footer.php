@@ -1,6 +1,8 @@
-<footer>
+<footer class="position-relative">
 
-    <form>
+    <img class="position-absolute footer__one-img" src="Boaz/img/Layer29.png" alt="10erife">
+
+    <form class="position-relative footer__form">
 
         <div class="form-group-flex-box">
 
@@ -36,11 +38,20 @@
 
         <textarea id="message" name="message" rows="4" cols="50">MESSAGE</textarea>
 
-        <input type="submit" value="Submit">
+        <div class="form__submit-box">
+            <input type="hidden" name="event" id="event" value="sendmail">
+            <input class="form__submit-box__btn" type="submit" value="SEND MESSAGE">
+        </div>
 
     </form>
 
 </footer>
+
+<div class="copyright text-center">
+    <a href="/">
+        <img class="copyright__img" src="Boaz/img/Layer6.png" alt="10erife">
+    </a>
+</div>
 
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"></script>
 <script src="https://olivier3lanc.github.io/Scroll-Btween/js/ola.min.js"></script>

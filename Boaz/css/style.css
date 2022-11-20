@@ -13,6 +13,30 @@ body {
     box-sizing: border-box;
 }
 
+@font-face {
+    src: url(../font/MyriadProBlack.otf);
+    font-family: MyriadProBlack;
+}
+
+@font-face {
+    src: url(../font/MyriadProBold.ttf);
+    font-family: MyriadProBold;
+}
+
+@font-face {
+    src: url(../font/MyriadProLight.otf);
+    font-family: MyriadProLight;
+}
+
+@font-face {
+    src: url(../font/MyriadProRegular.ttf);
+    font-family: MyriadProRegular;
+}
+
+p {
+    font-family: MyriadProLight;
+}
+
 :root {
     --color-black-100: hsl(213, 20%, 9%);
     --bg-image-one: url(../img/paralax-box/layer-33.png);
@@ -109,6 +133,10 @@ body {
     margin-top: -13px;
 }
 
+.page-flex-box__div__h3--color-c {
+    color: #000;
+}
+
 .page-flex-box__div__p {
     font-size: 2.3vh;
     line-height: 3.5vh;
@@ -193,6 +221,11 @@ body {
     margin: 0 11rem;
     padding: 3em;
     height: 60vh;
+}
+
+.page-next-flex-box--color-c {
+    background-color: rgba(0, 0, 0, .7);
+    color: #fff;
 }
 
 
@@ -355,6 +388,11 @@ body {
     height: 128vh;
 }
 
+.parallax-item__one-img-box__img {
+    bottom: 0;
+    width: 100%;
+}
+
 .facebook-link-box {
     background: #fd5843;
     margin-top: .5em;
@@ -371,7 +409,7 @@ body {
 }
 
 .parallax-next-item {
-    background: url(../img/layer25.png);
+    background: url(../img/Layer25.jpg);
     background-size: 100% 100%;
     margin-bottom: 4em;
     height: 100%;
@@ -382,7 +420,7 @@ body {
 }
 
 .parallax-next-two-item {
-    background: url(../img/layer26.png);
+    background: url(../img/Layer26.jpg);
     background-size: 100% 100%;
     height: 100%;
 }
@@ -434,6 +472,31 @@ textarea {
 .form-group-flex-box__div__input-box--value {
     margin-right: 0;
     margin-left: 1.5em;
+}
+
+.form__submit-box {
+    width: 23%;
+    margin: auto;
+}
+
+.form__submit-box__btn {
+    background: #000;
+    color: #fff;
+    padding: 0.33em 0;
+    cursor: pointer;
+}
+
+.footer__one-img {
+    top: -13%;
+    width: 90%;
+}
+
+
+/********************  Copyright start **********************/
+
+.copyright__img {
+    width: 13%;
+    margin: 2em 0;
 }
 
 

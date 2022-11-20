@@ -110,6 +110,9 @@
                 </div>
             </div>
 
+            <img class="parallax-item__one-img-box__img position-absolute" src="Boaz/img/paralax-box/Layer-29.png"
+                alt="10erife">
+
         </div>
 
     </div>
@@ -176,19 +179,25 @@
     <div id="next-parallax" class="parallax-item position-relative parallax-next-item">
 
         <div class="page-flex-box position-relative page-next-flex-box--color-and-w-value">
-            <div class="page-flex-box__div">
-                <h2>The</h2>
-                <h3>Area</h3>
-                <a class="one-page-link" href="#">Map</a>
+            <div class="page-flex-box__div position-relative">
+                <div class="page-flex-box__div__page-box parallax-next-item__page-box position-absolute">
+                    <h2 class="page-flex-box__div__h2">The</h2>
+                    <h3 class="page-flex-box__div__h3 page-flex-box__div__h3--color-c">Area</h3>
+                    <a class="one-page-link" href="#">Map</a>
+                </div>
             </div>
             <div class="page-flex-box__div">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                <p class="page-flex-box__div__p">Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem Ipsum has
+                    been
                     the
                     industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
                     type
                     and scrambled it to make a type specimen book.</p>
 
-                <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+                <p class="page-flex-box__div__p">It has survived not only five centuries, but also the leap into
+                    electronic typesetting,
+                    remaining
                     essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
                     containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
                     PageMaker including versions of Lorem Ipsum.</p>
@@ -199,20 +208,26 @@
 
     <div id="next-two-parallax" class="parallax-item position-relative parallax-next-two-item">
 
-        <div class="page-flex-box position-relative page-next-flex-box--color-and-w-value">
-            <div class="page-flex-box__div">
-                <h2>The</h2>
-                <h3>Area</h3>
-                <a class="one-page-link" href="#">Map</a>
+        <div class="page-flex-box position-relative page-next-flex-box--color-and-w-value page-next-flex-box--color-c">
+            <div class="page-flex-box__div position-relative">
+                <div class="page-flex-box__div__page-box parallax-next-item__page-box position-absolute">
+                    <h2 class="page-flex-box__div__h2">To</h2>
+                    <h3 class="page-flex-box__div__h3">Get</h3>
+                    <h3 class="page-flex-box__div__h3">Around...</h3>
+                    <a class="one-page-link" href="#">titsa.com</a>
+                </div>
             </div>
             <div class="page-flex-box__div">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                <p class="page-flex-box__div__p">Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem Ipsum has
+                    been
                     the
                     industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
                     type
                     and scrambled it to make a type specimen book.</p>
 
-                <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+                <p class="page-flex-box__div__p">It has survived not only five centuries, but also the leap into
+                    electronic typesetting, remaining
                     essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
                     containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
                     PageMaker including versions of Lorem Ipsum.</p>
